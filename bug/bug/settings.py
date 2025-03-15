@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^ct_o3@l5)n-pu8qlwf$1k5(edft+=%%f=$ugb94_&q+gxp&7p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["yandex-gamification-hackathon.onrender.com"]
 
 
 # Application definition
