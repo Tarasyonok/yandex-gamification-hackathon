@@ -361,7 +361,7 @@
 
     <div class="card">
       <h1 style="text-align: center; margin: 0; margin-bottom: -40px;">
-        Жучара</h1>
+        ЖучЯндекс</h1>
 
       <div
         style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 0; margin-right: 30px; margin-bottom: 20px;">
@@ -413,21 +413,18 @@
                 class="check-mark"></span> Напоить Бага</p>
             <p>Награда: 10 багов и 25XP</p>
           </div>
-          <div class="daily-task">
+          <div class="daily-task" style="">
             <p style="display: flex; align-items: center; gap: 10px; row-gap: 10px; font-size: 20px;"><span
-                class="check-mark"></span> Поиграть с Багом</p>
+                class="check-mark" style="background-color: #f2f2f2;"></span> Поиграть с Багом</p>
             <p>Награда: 10 багов и 25XP</p>
           </div>
         </div>
         <div style="width: 40%; display: flex; border: 1px solid #c5c5c5; border-radius: 10px;">
+          <img src="{% static 'Bug_Random3.png' %}" alt="" style="height: 300px;">
           <div style="display: flex; flex-direction: column; width: 25%;">
-            <div class="bug-item">Картинка головы</div>
-            <div class="bug-item">Картинка ног</div>
-          </div>
-          <img src="{% static 'bug.png' %}" alt="" style="width: 50%; height: auto;">
-          <div style="display: flex; flex-direction: column; width: 25%;">
-            <div class="bug-item">Картинка тела</div>
-            <div class="bug-item">Картинка крыльев</div>
+            <div class="bug-item"><img src="{% static 'Bug_Top3_L.png' %}" alt="" style="height: 100px;"></div>
+            <div class="bug-item"><img src="{% static 'Bug_Middle3.png' %}" alt="" style="height: 100px;"></div>
+            <div class="bug-item"><img src="{% static 'Bug_Low2_PNeon.png' %}" alt="" style="height: 100px;"></div>
           </div>
         </div>
       </div>
@@ -436,24 +433,24 @@
       <h1 style="text-align: center; margin-bottom: 30px;">Магазин</h1>
       <div style="display: flex; height: 300px; gap: 10px;">
         <div class="shop-item">
-          <img src="{% static 'bug.png' %}" alt="" height="80%">
+          <img src="{% static 'Bug_Top1.png' %}" alt="" height="80%">
           <button>Купить (100 багов)</button>
         </div>
         <div class="shop-item">
-          <img src="{% static 'bug.png' %}" alt="" height="80%">
+          <img src="{% static 'Bug_Middle1_GP.png' %}" alt="" height="80%">
+          <button>Купить (200 багов)</button>
+        </div>
+        <div class="shop-item">
+          <img src="{% static 'Bug_Middle2.png' %}" alt="" height="80%">
+          <button>Купить (150 багов)</button>
+        </div>
+        <div class="shop-item">
+          <img src="{% static 'Bug_Top2.png' %}" alt="" height="80%">
           <button>Купить (100 багов)</button>
         </div>
         <div class="shop-item">
-          <img src="{% static 'bug.png' %}" alt="" height="80%">
-          <button>Купить (100 багов)</button>
-        </div>
-        <div class="shop-item">
-          <img src="{% static 'bug.png' %}" alt="" height="80%">
-          <button>Купить (100 багов)</button>
-        </div>
-        <div class="shop-item">
-          <img src="{% static 'bug.png' %}" alt="" height="80%">
-          <button>Купить (100 багов)</button>
+          <img src="{% static 'Bug_Low1_Neon.png' %}" alt="" height="80%">
+          <button>Купить (300 багов)</button>
         </div>
       </div>
     </div>
