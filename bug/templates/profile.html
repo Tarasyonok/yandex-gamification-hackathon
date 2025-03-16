@@ -805,15 +805,16 @@
             setTimeout(() => {
                 let headerNode = document.querySelector("header");
                 let bodyNode = document.querySelector("body");
+                let htmlNode = document.querySelector("html");
                 let footerNode = document.querySelector("footer");
                 let itemNode = document.querySelector(".styles_link-item__LI9NH");
                 itemNode.classList.add("styles_active__YOKIr");
                 bodyNode.style.overflowX="hidden";
                 headerNode.style.marginBottom="98px";
                 {% if first_time %}
-                    bodyNode.innerHTML += `<a href="/bug_profile"><img src="{% static 'error.png' %}" alt="" style="position: absolute; right: 0; top: ${bodyNode.offsetHeight - 268}px; z-index: 1000; width: 200px; cursor: pointer;"></a>`;
+                    htmlNode.innerHTML += `<a href="/bug_profile"><img src="{% static 'error.png' %}" alt="" style="position: fixed; right: 0; bottom: 0; z-index: 1000; width: 200px; cursor: pointer;"></a>`;
                 {% else %}
-                    bodyNode.innerHTML += `<a href="/bug_profile"><img src="{% static 'bug.png' %}" id="bug" alt="" style="position: absolute; right: -120px; top: 150px; z-index: 1000; width: 200px; transform: rotate(-90deg); cursor: pointer; transition: .3s;"></a>`;
+                    htmlNode.innerHTML += `<a href="/bug_profile"><img src="{% static 'Bug_Random3.png' %}" id="bug" alt="" style="position: fixed; right: -120px; top: 150px; z-index: 1000; width: 200px; transform: rotate(-90deg); cursor: pointer; transition: .3s;"></a>`;
                 {% endif %}
                 let bugNode = document.querySelector("#bug");
                 bugNode.addEventListener("mouseout", () => {
